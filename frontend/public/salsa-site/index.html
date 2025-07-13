@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salsa Flubb' - École de Salsa Cubaine - Montpellier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="scrollToTop()">
+                <h1>Salsa Flubb'</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#planning" onclick="scrollToSection('planning')">Planning</a>
+                <a href="#about" onclick="scrollToSection('about')">Qui suis-je ?</a>
+                <a href="#testimonials" onclick="scrollToSection('testimonials')">Témoignages</a>
+                <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+                <button class="nav-btn" onclick="scrollToSection('contact')">Contactez-moi</button>
+            </div>
+            <div class="nav-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#planning" onclick="scrollToSection('planning')">Planning</a>
+            <a href="#about" onclick="scrollToSection('about')">Qui suis-je ?</a>
+            <a href="#testimonials" onclick="scrollToSection('testimonials')">Témoignages</a>
+            <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+            <button class="nav-btn" onclick="scrollToSection('contact')">Contactez-moi</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1558715585-9b706788d173?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwzfHxjdWJhbiUyMHNhbHNhJTIwZGFuY2luZ3xlbnwwfHx8b3JhbmdlfDE3NTIyNzgxMzN8MA&ixlib=rb-4.1.0&q=85" alt="Salsa dancing silhouette">
+        </div>
+        <div class="hero-elements">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-title">
+                <h1>Salsa Flubb'</h1>
+                <div class="title-divider"></div>
+                <p>École de Salsa Cubaine - Montpellier</p>
+            </div>
+            <div class="hero-banner">
+                <div class="banner-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="banner-content">
+                    <h2>Rentrée 2025-2026</h2>
+                    <p>Découvrez la passion de la salsa cubaine avec nos cours adaptés à tous les niveaux</p>
+                </div>
+            </div>
+            <div class="hero-features">
+                <div class="feature-card">
+                    <i class="fas fa-music"></i>
+                    <h3>Authenticité Cubaine</h3>
+                    <p>Apprenez les vrais pas de la salsa cubaine dans le respect de la tradition</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Plusieurs Lieux</h3>
+                    <p>Cours dans différents studios autour de Montpellier</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Tous Niveaux</h3>
+                    <p>Du débutant complet au danseur confirmé</p>
+                </div>
+            </div>
+            <button class="hero-btn" onclick="scrollToSection('planning')">
+                Découvrir le Planning
+            </button>
+        </div>
+    </section>
+
+    <!-- Planning Section -->
+    <section id="planning">
+        <div class="container">
+            <div class="section-header">
+                <h2>Planning des Cours</h2>
+                <div class="section-divider"></div>
+                <p>Choisissez le créneau qui vous convient le mieux parmi nos différents lieux et niveaux</p>
+            </div>
+            <div class="planning-grid" id="planning-grid">
+                <!-- Planning cards will be populated by JavaScript -->
+            </div>
+            <div class="planning-legend">
+                <h4><i class="fas fa-users"></i> Niveaux des cours</h4>
+                <div class="legend-grid">
+                    <div class="legend-item">
+                        <span class="badge badge-beginner">Débutant</span>
+                        <span>Aucune expérience requise</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="badge badge-intermediate">Intermédiaire</span>
+                        <span>Bases acquises</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="badge badge-advanced">Avancé</span>
+                        <span>Niveau confirmé</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="badge badge-mixed">Débutant & Inter</span>
+                        <span>Cours mixte</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Qui suis-je ?</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1654787616600-59ce4b023edf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxjdWJhbiUyMHNhbHNhJTIwZGFuY2luZ3xlbnwwfHx8b3JhbmdlfDE3NTIyNzgxMzN8MA&ixlib=rb-4.1.0&q=85" alt="Professeur de salsa">
+                </div>
+                <div class="about-text">
+                    <div class="about-description">
+                        <p>Passionné de salsa cubaine depuis plus de 10 ans, je vous accompagne dans l'apprentissage de cette danse magnifique qui allie technique, passion et convivialité.</p>
+                        <p>Formé à Cuba et en Europe, j'ai développé une pédagogie adaptée à tous les niveaux, du débutant complet au danseur confirmé. Mon approche privilégie le plaisir de danser tout en respectant l'authenticité de la salsa cubaine.</p>
+                        <p>Rejoignez-moi pour découvrir l'univers chaleureux de la salsa dans une ambiance détendue et bienveillante !</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <i class="fas fa-award"></i>
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Élèves formés</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-globe"></i>
+                            <span class="stat-number">Cuba</span>
+                            <span class="stat-label">Formation authentique</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-heart"></i>
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Passion</span>
+                        </div>
+                    </div>
+                    <button class="about-btn" onclick="scrollToSection('contact')">
+                        Me Contacter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Témoignages</h2>
+                <div class="section-divider"></div>
+                <p>Découvrez les expériences de nos élèves et leur progression dans l'univers de la salsa</p>
+            </div>
+            <div class="testimonials-content">
+                <div class="video-testimonials">
+                    <h3>Témoignages Vidéo</h3>
+                    <div class="video-grid" id="video-grid">
+                        <!-- Video testimonials will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="written-testimonials">
+                    <h3>Avis Google</h3>
+                    <div class="testimonials-widget">
+                        <div class="widget-header">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Découvrez les avis de nos élèves sur Google Reviews</p>
+                        </div>
+                        <div class="elfsight-app-99d2507d-9034-406f-add9-e15167429175" data-elfsight-app-lazy></div>
+                    </div>
+                </div>
+                <div class="testimonials-cta">
+                    <h3>Rejoignez l'aventure !</h3>
+                    <p>Venez vivre votre propre expérience de la salsa cubaine</p>
+                    <button class="cta-btn" onclick="scrollToSection('contact')">
+                        Commencer mes cours
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <div class="section-divider"></div>
+                <p>Prêt à commencer votre aventure salsa ? Contactez-moi pour toute information !</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Informations de Contact</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:aurelien@salsa-flubb.com">aurelien@salsa-flubb.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p class="contact-label">Téléphone</p>
+                                <a href="tel:+33600000000">+33 6 XX XX XX XX</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-share-alt"></i>
+                            <div>
+                                <p class="contact-label">Réseaux Sociaux</p>
+                                <div class="social-links">
+                                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="contact-btn" onclick="openEmailClient()">
+                            Envoyer un Email
+                        </button>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="locations-card">
+                        <h3>Nos Lieux de Cours</h3>
+                        <div class="locations-list" id="locations-list">
+                            <!-- Locations will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="quick-contact">
+                        <h3>Contact Rapide</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nom</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Votre message..."></textarea>
+                            </div>
+                            <button type="submit" class="form-btn">
+                                Envoyer le Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Salsa Flubb'</h3>
+                    <p>École de salsa cubaine authentique dans la région de Montpellier. Apprenez la vraie salsa dans une ambiance chaleureuse et conviviale.</p>
+                    <div class="footer-social">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#planning">Planning</a></li>
+                        <li><a href="#about">Qui suis-je ?</a></li>
+                        <li><a href="#testimonials">Témoignages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:aurelien@salsa-flubb.com">aurelien@salsa-flubb.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+33600000000">+33 6 XX XX XX XX</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Montpellier et environs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Salsa Flubb' - Tous droits réservés</p>
+                <p>Fait avec <i class="fas fa-heart"></i> pour la salsa cubaine</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeVideoModal()">&times;</span>
+            <div class="modal-body">
+                <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
