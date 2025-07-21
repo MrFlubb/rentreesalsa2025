@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rentreesalsa2025site/static/css/main.476744f4.css",
+    "main.js": "/rentreesalsa2025site/static/js/main.556de293.js",
+    "index.html": "/rentreesalsa2025site/index.html",
+    "main.476744f4.css.map": "/rentreesalsa2025site/static/css/main.476744f4.css.map",
+    "main.556de293.js.map": "/rentreesalsa2025site/static/js/main.556de293.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.476744f4.css",
+    "static/js/main.556de293.js"
+  ]
+}
